@@ -17,19 +17,17 @@ $firstArr = [
         'five' => 12,
     ],
 ];
-function sumAllValues($array) {
-    $sum = 0;
-    foreach ($array as $value) {
-        if (is_array($value)) {
-            $sum += sumAllValues($value);
-        } else {
-            $sum += $value;
+
+$secondElements = [];
+
+foreach ($firstArr as $key => $value) {
+    if (is_array($value)) {
+        $values = array_values($value);
+        if (isset($values[1])) {
+            $secondElements[] = $values[1];
         }
     }
-    return $sum;
 }
 
-$totalSum = sumAllValues($firstArr);
-echo $totalSum;
-
+print_r($secondElements);
 ?>
