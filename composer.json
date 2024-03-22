@@ -1,0 +1,20 @@
+{
+    "name": "hp/courses-php",
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sachuk Vadim",
+            "email": "vadik.sachuk62@gmail.com"
+        }
+    ],
+    "require": {},
+    "config": {
+        "optimize-autoloader": true,
+        "preffered-install": "dist",
+        "sort-packages": true
+    }
+}
